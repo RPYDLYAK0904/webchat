@@ -1,0 +1,19 @@
+{
+  "name": "webchat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test:smoke": "npx cypress run --env grepTags='smoke'",
+    "test:regression": "npx cypress run --env grepTags='regression'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^10.11.0",
+    "cypress-dotenv": "^2.0.0",
+    "cypress-grep": "^3.0.4",
+    "prettier": "^2.7.1"
+  }
+}

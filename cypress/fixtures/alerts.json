@@ -1,0 +1,5 @@
+{
+  "Name": "Name is required",
+  "MobilePhone": "Mobile phone is required",
+  "Message": "Message is required"
+}

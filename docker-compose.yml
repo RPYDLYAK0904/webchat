@@ -1,0 +1,8 @@
+version: "4"
+services:
+
+  # this container will run Cypress test using Chrome browser
+  smoke:
+    image: "cypress-webchat"
+    command: "test:smoke"
+    
