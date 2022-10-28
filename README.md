@@ -3,7 +3,7 @@
 1. To run test from Docker:
     - Download and install Docker on your machine
     - To build image run:
-    - "docker build -t cypress-webchat ."
+    - "docker build -t cypress-webchat ." (space and dot is part of command)
     - To run tests run:
     - "docker-compose run smoke"
 
