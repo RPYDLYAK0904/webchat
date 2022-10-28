@@ -7,7 +7,7 @@
     - To run tests run:
     - "docker-compose run smoke"
 
-2. To run tests loccaly:
+2. To run tests loccaly from the command line:
     - To install dependencies run:
     - "npm install"
     - To run smoke test:
