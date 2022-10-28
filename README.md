@@ -4,8 +4,10 @@
     - Download and install Docker on your machine
     - To build image run:
     - "docker build -t cypress-webchat ." (space and dot is part of command)
-    - To run tests run:
+    - To run smoke test:
     - "docker-compose run smoke"
+    - To run regression test:
+    - "docker-compose run regression"
 
 2. To run tests loccaly from the command line:
     - To install dependencies run:

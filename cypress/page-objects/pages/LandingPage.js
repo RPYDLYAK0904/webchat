@@ -2,7 +2,7 @@ export default class LandingPage {
 
    static buttonIframe = '#podium-bubble'
    static openChatButton = '[aria-label="Chat widget open"]'
-   static closeChatButton = ''
+   static closeChatButton = '[aria-label="Chat widget close"]'
 
     static displayOpenChatButton() {
         cy.getIframe(this.buttonIframe).find(this.openChatButton).should('be.visible')

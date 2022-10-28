@@ -1,8 +1,12 @@
 version: "4"
 services:
 
-  # this container will run Cypress test using Chrome browser
+  # this container will run Cypress smoke test
   smoke:
     image: "cypress-webchat"
     command: "test:smoke"
     
+  # this container will run Cypress regression test
+  regression:
+    image: "cypress-webchat"
+    command: "test:regression"

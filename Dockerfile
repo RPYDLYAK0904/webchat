@@ -6,8 +6,3 @@ COPY ./cypress.config.js .
 COPY ./cypress ./cypress
 RUN npm install
 ENTRYPOINT ["npm", "run"]
-
-# docker build -t cypress-w3org .
-# docker-compose run e2e-chrome
-# docker-compose run e2e-firefox
-# docker-compose up
