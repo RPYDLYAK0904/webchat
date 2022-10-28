@@ -11,10 +11,8 @@ export default class SendMessageWidget {
     static currentLocation = '.SendSmsPage__CurrentLocation'
     static backArrowButton = '[aria-label="back"]'
     
-    static validateIntroMessage() {
-        let date = new Date().toISOString()
-        let introMessage = "intro message - " + date.slice(0, 10) + " " + date.slice(11, 16)
-        cy.getIframe(this.iframe).find(this.introMessage).should('contain.text', introMessage)
+    static validateIntroMessage() {    
+        cy.getIframe(this.iframe).find(this.introMessage).should('contain.text', message)
     }
 
     static displayLocation(location) {

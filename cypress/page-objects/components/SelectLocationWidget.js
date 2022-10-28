@@ -1,14 +1,15 @@
 export default class SelectLocationWidget {
 
-    static displaySelectlocationWidget() {
-        cy.getIframe('#podium-modal').find('.LocationSelector').should('be.visible')
-    }
+    static widgetIframe = '#podium-modal'
+    static locationWidget = '.LocationSelector'
+    static locationName = '.LocationContainer__TopLine'
 
-    static typeZipOrAddress(text) {
-        cy.get('[name="Search Locations"]').clear().type(`${text}, {enter}`)
+    static displaySelectlocationWidget() {
+        cy.getIframe(this.widgetIframe).find(this.locationWidget).should('be.visible')
     }
 
     static clickOnSuggestion(location) {
-        cy.getIframe('#podium-modal').find('.LocationContainer__TopLine').contains(location).click()
+        cy.getIframe(this.widgetIframe).find(this.locationName).contains(location).click()
     }
+    
 }

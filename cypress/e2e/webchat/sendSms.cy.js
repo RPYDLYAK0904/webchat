@@ -10,8 +10,10 @@ describe('send sms widget validations', () => {
         SelectLocationWidget.clickOnSuggestion('Narnia')
     })
   
-    it('should display current date and time along with intro message', { tags: ['regression'] }, () => {       
-        SendSmsWidget.validateIntroMessage()
+    it('should display current date and time along with intro message', { tags: ['regression'] }, () => {     
+        let date = new Date().toISOString()
+        let message = "intro message - " + date.slice(0, 10) + " " + date.slice(11, 16)  
+        SendSmsWidget.validateIntroMessage(message)
     })
 
     it('should enable Send button', { tags: ['smoke', 'regression'] }, () => {
