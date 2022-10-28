@@ -13,5 +13,9 @@ describe('select location widget validations', () => {
         SelectLocationWidget.clickOnSuggestion(location.Narnia)
         SendSmsWidget.displayLocation(location.Narnia)
       })     
-    })    
+    })  
+    
+    it('should display default locations count', { tags: ['regression'] }, () => {
+      SelectLocationWidget.displaySuggestionsCount(4)   
+    })
 })

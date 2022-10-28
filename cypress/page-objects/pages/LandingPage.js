@@ -17,6 +17,6 @@ export default class LandingPage {
     }
 
     static closeChatWidget() {
-        cy.getIframe(this.buttonIframe).find(this.closeChatButton, { timeout: 10000 }).click()
+        cy.getIframe(this.buttonIframe).find(this.closeChatButton).click()
     }
 }

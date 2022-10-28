@@ -12,4 +12,7 @@ export default class SelectLocationWidget {
         cy.getIframe(this.widgetIframe).find(this.locationName).contains(location).click()
     }
     
+    static displaySuggestionsCount(num) {
+        cy.getIframe(this.widgetIframe).find(this.locationName).should('have.length', num)
+    }
 }
