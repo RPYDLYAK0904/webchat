@@ -1,7 +1,7 @@
 # webchat
 
 1. To run test from Docker:
-    - Download Docker on your machine
+    - Download and install Docker on your machine
     - To build image run:
     - "docker build -t cypress-webchat ."
     - To run tests run:
